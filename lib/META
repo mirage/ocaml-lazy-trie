@@ -1,0 +1,11 @@
+# OASIS_START
+# DO NOT EDIT (digest: 8b2630db80dd1fed8264bfea3b255247)
+version = "1.0.0"
+description = "Lazy prefix trees"
+archive(byte) = "lazy_trie.cma"
+archive(byte, plugin) = "lazy_trie.cma"
+archive(native) = "lazy_trie.cmxa"
+archive(native, plugin) = "lazy_trie.cmxs"
+exists_if = "lazy_trie.cma"
+# OASIS_STOP
+
