@@ -1,5 +1,5 @@
 # OASIS_START
-# DO NOT EDIT (digest: 55b366f59702f11c8eef276a36f22281)
+# DO NOT EDIT (digest: 8624dcfd2102de32005b0aeb336d425f)
 # Ignore VCS directories, you can use the same kind of rule outside
 # OASIS_START/STOP if you want to exclude directories that contains
 # useless stuff for the build process
@@ -15,4 +15,7 @@
 "_darcs": not_hygienic
 # Library lazy_trie
 "lib/lazy_trie.cmxs": use_lazy_trie
+<lib/*.ml{,i}>: pkg_sexplib
+<lib/*.ml{,i}>: pkg_sexplib.syntax
 # OASIS_STOP
+true: annot, bin_annot, debug, strict_sequence, principal

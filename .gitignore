@@ -1,0 +1,6 @@
+_build/
+*.native
+*.byte
+.*.swp
+setup.data
+setup.log

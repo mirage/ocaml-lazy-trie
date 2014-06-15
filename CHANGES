@@ -1,2 +1,5 @@
-1.0.0: (2014-01-02)
+1.1.0 (2014-06-15):
+* Add sexplib serializers to the trie.
+
+1.0.0 (2014-01-02):
 * Initial release of the library

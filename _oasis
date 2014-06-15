@@ -1,6 +1,6 @@
 OASISFormat: 0.3
 Name:        lazy-trie
-Version:     1.0.0
+Version:     1.1.0
 Synopsis:    Lazy prefix trees
 Authors:     Louis Gesbert, Thomas Gazagnaire
 License:     ISC
@@ -11,3 +11,5 @@ Library lazy_trie
   Path: lib/
   Findlibname: lazy-trie
   Modules: Lazy_trie
+  BuildDepends: sexplib, sexplib.syntax
+  XMetaRequires: sexplib

@@ -17,10 +17,12 @@
 
 let (!!) = Lazy.force
 
+open Sexplib.Std
+
 type ('a,'b) t =  {
   value: 'b option;
   children: ('a * ('a,'b) t) list Lazy.t;
-}
+} with sexp
 
 let create ?(children = lazy []) ?value () =
   { children; value; }
@@ -105,7 +107,8 @@ let list_map_assoc f children key empty =
   in
   aux [] children
 
-let rec map_subtree tree path f = match path with
+let rec map_subtree tree path f = 
+  match path with
   | [] -> f tree
   | h :: tl ->
       let children = lazy (

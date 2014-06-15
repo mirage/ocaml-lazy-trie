@@ -17,7 +17,7 @@
 
 (** Lazy tries based on lists *)
 
-type ('a, 'b) t
+type ('a, 'b) t with sexp
 (** Type of tries mapping from ['a list] to ['b] *)
 
 val empty: ('a,'b) t
