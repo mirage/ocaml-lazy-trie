@@ -1,0 +1,22 @@
+opam-version: "1.2"
+maintainer: "thomas@gazagnaire.org"
+authors: [ "Louis Gesbert" "Thomas Gazagnaire" ]
+license: "ISC"
+build: [
+  ["ocaml" "setup.ml" "-configure" "--prefix" prefix]
+  ["ocaml" "setup.ml" "-build"]
+]
+remove: [
+  ["ocamlfind" "remove" "lazy-trie"]
+]
+build-doc: [ "ocaml" "setup.ml" "-doc" ]
+depends: [
+  "ocamlfind"
+  "sexplib"
+  "ppx_sexp_conv" {build}
+  "ocamlbuild" {build}
+]
+dev-repo: "git://github.com/mirage/ocaml-lazy-trie"
+homepage: "https://github.com/mirage/ocaml-lazy-trie"
+bug-reports: "https://github.com/mirage/ocaml-lazy-trie/issues"
+install: ["ocaml" "setup.ml" "-install"]
