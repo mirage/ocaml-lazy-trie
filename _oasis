@@ -11,5 +11,5 @@ Library lazy_trie
   Path: lib/
   Findlibname: lazy-trie
   Modules: Lazy_trie
-  BuildDepends: sexplib, sexplib.syntax
+  BuildDepends: sexplib, ppx_sexp_conv
   XMetaRequires: sexplib
