@@ -1,5 +1,10 @@
-1.1.0 (2014-06-15):
+## v1.2.0 (2019-03-07):
+* Use ppx instead of camlp4 for sexp converters (#3 by @vasilisp)
+* Build with dune (#7 @verbosemode)
+* Update CI matrix up to OCaml 4.07 (@avsm)
+
+## 1.1.0 (2014-06-15):
 * Add sexplib serializers to the trie.
 
-1.0.0 (2014-01-02):
+## 1.0.0 (2014-01-02):
 * Initial release of the library
