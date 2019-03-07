@@ -1,16 +1,18 @@
-opam-version: "1.2"
+opam-version: "2.0"
 maintainer: "thomas@gazagnaire.org"
 authors: [ "Louis Gesbert" "Thomas Gazagnaire" ]
 license: "ISC"
 build: [
-  ["jbuilder" "subst"] {pinned}
-  ["jbuilder" "build" "-p" name "-j" jobs]
+  ["dune" "subst"] {pinned}
+  ["dune" "build" "-p" name "-j" jobs]
 ]
 depends: [
   "sexplib"
   "ppx_sexp_conv" {build}
-  "jbuilder" {build & >= "1.0+beta9"}
+  "dune" {build & >= "1.0"}
 ]
 dev-repo: "git://github.com/mirage/ocaml-lazy-trie"
 homepage: "https://github.com/mirage/ocaml-lazy-trie"
 bug-reports: "https://github.com/mirage/ocaml-lazy-trie/issues"
+synopsis: "Implementation of lazy prefix trees"
+description: "Implementation of lazy prefix trees"
