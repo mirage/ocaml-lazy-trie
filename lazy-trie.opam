@@ -12,7 +12,7 @@ depends: [
   "ppx_sexp_conv"
   "dune" {build & >= "1.0"}
 ]
-dev-repo: "git://github.com/mirage/ocaml-lazy-trie"
+dev-repo: "git+https://github.com/mirage/ocaml-lazy-trie"
 doc: "https://mirage.github.io/ocaml-lazy-trie/"
 homepage: "https://github.com/mirage/ocaml-lazy-trie"
 bug-reports: "https://github.com/mirage/ocaml-lazy-trie/issues"
