@@ -8,7 +8,7 @@ build: [
 ]
 depends: [
   "sexplib"
-  "ppx_sexp_conv" {build}
+  "ppx_sexp_conv"
   "dune" {build & >= "1.0"}
 ]
 dev-repo: "git://github.com/mirage/ocaml-lazy-trie"
